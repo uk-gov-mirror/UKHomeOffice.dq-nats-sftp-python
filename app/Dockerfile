@@ -54,7 +54,7 @@ RUN apk add --update nodejs npm && \
 RUN apk update --quiet \
     && apk upgrade --quiet
 
-RUN pip install -U setuptools==70.0.0
+RUN pip install -U setuptools==78.1.1
 
 #New packages available to address security vulnerabilities
 RUN apk update && apk add --upgrade \
